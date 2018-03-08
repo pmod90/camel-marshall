@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employee>
+    <status>new status</status>
+    <type>post</type>
+    <slug>get-empowered-review-window-and-the-processing-method-tip-59</slug>
+</employee>

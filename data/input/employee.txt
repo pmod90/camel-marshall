@@ -1,0 +1,112 @@
+{
+  "id": 4811,
+  "date": "2018-03-07T10:15:41",
+  "date_gmt": "2018-03-07T15:15:41",
+  "guid": {
+    "rendered": "http://blog.waters.com/?p=4811"
+  },
+  "modified": "2018-03-06T17:37:19",
+  "modified_gmt": "2018-03-06T22:37:19",
+  "slug": "get-empowered-review-window-and-the-processing-method-tip-59",
+  "status": "publish",
+  "type": "post",
+  "link": "http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-59",
+  "title": {
+    "rendered": "Get Empowered: Review Window and the Processing Method | Tip #59"
+  },
+  "content": {
+    "rendered": "<h2>Tip #59: Deriving Channels in Empower (Part 12)</h2>\n<p><a href=\"http://m.communications.waters.com/webApp/empowerTips?origin=Blog\"><img class=\"alignright wp-image-3118 size-medium\" src=\"http://blog.waters.com/wp-content/uploads/2017/05/subscribe-blog-600-300x161.jpg\" alt=\"\" width=\"300\" height=\"161\" srcset=\"http://blog.waters.com/wp-content/uploads/2017/05/subscribe-blog-600-300x161.jpg 300w, http://blog.waters.com/wp-content/uploads/2017/05/subscribe-blog-600.jpg 600w\" sizes=\"(max-width: 300px) 100vw, 300px\" /></a></p>\n<p>Welcome back to Get Empowered! In our last tip-of-the-week blog for <a href=\"http://www.waters.com/waters/en_US/Empower-3-Chromatography-Data-Software/nav.htm?cid=513188\">Empower Software</a>, we reviewed Deriving Channels when working with 3D MS chromatography data in Empower.</p>\n<ul>\n<li>Tip 47: Smooth a chromatogram by Deriving a Channel (<a href=\"http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-47\">part 1</a>)</li>\n<li>Tip 48: Correct for the time offset between detectors connected in series by Deriving a Channel (<a href=\"http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-48\">part 2</a>)</li>\n<li>Tip 49: Subtract a baseline from a 2D chromatogram by Deriving a Channel (<a href=\"http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-49\">part 3</a>).</li>\n<li>Tip 51: Subtract a 2D baseline from 3D PDA data by Deriving a Channel (<a href=\"http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-51\">part 4</a>).</li>\n<li>Tip 52: Derive MaxPlot from 3D PDA data (<a href=\"http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-52\">part 5</a>)</li>\n<li>Tip 53: Derive TotalPlot from 3D PDA data (<a href=\"http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-53\">part 6</a>)</li>\n<li>Tip 54: Derive RatioPlot from 3D PDA data (<a href=\"http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-54\">part 7</a>)</li>\n<li>Tip 55: Derive Timed Wavelength from 3D PDS data (<a href=\"http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-55\">part 8</a>)</li>\n<li>Tip 56: Derive Single Mass from 3D MS data (<a href=\"http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-56\">part 9</a>)</li>\n<li>Tip 57: Derive TIC plot from 3D MS data (<a href=\"http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-57\">part 10</a>)</li>\n<li>Tip 58: Improve noisy TIC plot Derived from 3D MS data (<a href=\"http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-58\">part 11</a>)</li>\n</ul>\n<p>In this tip, we will discuss another option for Deriving Channels when working with 3D MS data, called MaxPlot.</p>\n<p>You may recall that we learned about MaxPlot for 3D PDA data in <a href=\"http://blog.waters.com/get-empowered-review-window-and-the-processing-method-tip-52\">Tip 52</a>. Today we are going to learn about MaxPlot for 3D MS data. MaxPlot is a 2D chromatogram that plots each time point at the maximum intensity across the mass range. MaxPlot is Empower&#8217;s term for the channel of data commonly referred to in mass spectrometry as the BPI (Base Peak Intensity) channel. It uses only the intensity of the most intense peak (base peak) at a given retention time, contrary to the TIC which takes all ions into account.</p>\n<p>Let me show you how it is done.</p>\n<h3>Step 1</h3>\n<p>We begin by bringing a channel of 3D MS data into Review (Figure 1).</p>\n<div id=\"attachment_4813\" style=\"max-width: 690px\" class=\"wp-caption aligncenter\"><a href=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_1.png\"><img class=\"wp-image-4813\" src=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_1.png\" alt=\"Empower Blog: 3D MS data into Review | Figure 1\" width=\"680\" height=\"358\" srcset=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_1.png 1280w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_1-300x158.png 300w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_1-768x404.png 768w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_1-1024x539.png 1024w\" sizes=\"(max-width: 680px) 100vw, 680px\" /></a><p class=\"wp-caption-text\">Figure 1</p></div>\n<h3>Step 2</h3>\n<p>Go to the Method Set window and Derive a Channel, selecting MS: MaxPlot (Figure 2).</p>\n<div id=\"attachment_4814\" style=\"max-width: 668px\" class=\"wp-caption aligncenter\"><a href=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_2.png\"><img class=\"wp-image-4814 size-full\" src=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_2.png\" alt=\"Empower Tip: Select MS:MaxPlot | Figure 2\" width=\"658\" height=\"506\" srcset=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_2.png 658w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_2-300x231.png 300w\" sizes=\"(max-width: 658px) 100vw, 658px\" /></a><p class=\"wp-caption-text\">Figure 2</p></div>\n<h3>Step 3</h3>\n<p>Enter the Start Mass and End Mass and select the MS Scan (3D channel) from the Function drop-down list (Figure 3).</p>\n<div id=\"attachment_4815\" style=\"max-width: 668px\" class=\"wp-caption aligncenter\"><a href=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_3.png\"><img class=\"wp-image-4815 size-full\" src=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_3.png\" alt=\"Empower Tips: Enter Start Mass and End Mass/ Select the MS Scan | Figure 3\" width=\"658\" height=\"504\" srcset=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_3.png 658w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_3-300x230.png 300w\" sizes=\"(max-width: 658px) 100vw, 658px\" /></a><p class=\"wp-caption-text\">Figure 3</p></div>\n<h3>Step 4</h3>\n<p>Save the Derived Channel and select a Processing Method (Figure 4).</p>\n<div id=\"attachment_4816\" style=\"max-width: 624px\" class=\"wp-caption aligncenter\"><a href=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_4.png\"><img class=\"wp-image-4816 size-full\" src=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_4.png\" alt=\"Empower Tips: Save Derived Channel / Select a Processing Method | Figure 4\" width=\"614\" height=\"550\" srcset=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_4.png 614w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_4-300x269.png 300w\" sizes=\"(max-width: 614px) 100vw, 614px\" /></a><p class=\"wp-caption-text\">Figure 4</p></div>\n<h3>Step 5</h3>\n<p>Return to the Main Window and apply the Method Set. The MaxPlot chromatogram is displayed (Figure 5).</p>\n<p>The MaxPlot appears to be a bit noisy. Can this be improved? Yes, by employing CODA.</p>\n<div id=\"attachment_4817\" style=\"max-width: 1300px\" class=\"wp-caption alignnone\"><a href=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_5.png\"><img class=\"wp-image-4817 size-full\" src=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_5.png\" alt=\"Empoer Tips: MaxPlot chromatogram is displayed | Figure 5\" width=\"1290\" height=\"672\" srcset=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_5.png 1290w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_5-300x156.png 300w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_5-768x400.png 768w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_5-1024x533.png 1024w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_5-326x169.png 326w\" sizes=\"(max-width: 1290px) 100vw, 1290px\" /></a><p class=\"wp-caption-text\">Figure 5</p></div>\n<h3>Step 6</h3>\n<p>Return to the Method Set window, right-click on the Derived Channel in the tree, and select Properties (Figure 6).</p>\n<div id=\"attachment_4818\" style=\"max-width: 1006px\" class=\"wp-caption aligncenter\"><a href=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_6.png\"><img class=\"wp-image-4818 size-full\" src=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_6.png\" alt=\"Empower Tips: Right click on Derived Channel /Select Properties | Figure 6\" width=\"996\" height=\"488\" srcset=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_6.png 996w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_6-300x147.png 300w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_6-768x376.png 768w\" sizes=\"(max-width: 996px) 100vw, 996px\" /></a><p class=\"wp-caption-text\">Figure 6</p></div>\n<h3>Step 7</h3>\n<p>Click the MS CODA tab, enable CODA, and click OK (Figure 7).</p>\n<div id=\"attachment_4819\" style=\"max-width: 672px\" class=\"wp-caption aligncenter\"><a href=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_7.png\"><img class=\"wp-image-4819 size-full\" src=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_7.png\" alt=\"Empower Tips: Click MS CODA tab / Enable CODA | Figure 7\" width=\"662\" height=\"508\" srcset=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_7.png 662w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_7-300x230.png 300w\" sizes=\"(max-width: 662px) 100vw, 662px\" /></a><p class=\"wp-caption-text\">Figure 7</p></div>\n<h3>Step 8</h3>\n<p>Return to the Main Window, re-apply the Method Set and notice the improvement in the MaxPlot chromatogram (Figure 8).</p>\n<div id=\"attachment_4820\" style=\"max-width: 1290px\" class=\"wp-caption aligncenter\"><a href=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_8.png\"><img class=\"wp-image-4820 size-full\" src=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_8.png\" alt=\"Empower Tips: Improvement in the MaxPlot chromatogram | Figure 8\" width=\"1280\" height=\"674\" srcset=\"http://blog.waters.com/wp-content/uploads/2018/03/Figure_8.png 1280w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_8-300x158.png 300w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_8-768x404.png 768w, http://blog.waters.com/wp-content/uploads/2018/03/Figure_8-1024x539.png 1024w\" sizes=\"(max-width: 1280px) 100vw, 1280px\" /></a><p class=\"wp-caption-text\">Figure 8</p></div>\n<p>It’s that easy!</p>\n<p>Final note: This procedure can be followed using the QuickStart or Pro interface.</p>\n<p>&nbsp;</p>\n<p style=\"text-align: center;\">Please rate this Empower Tip of the Week</p>\n<p><a href=\"https://waterscorp.wufoo.com/forms/zgrh4me1w2ziog/def/field216=59\"><img class=\"aligncenter\" src=\"http://blog.waters.com/wp-content/uploads/2017/06/stars.jpg\" alt=\"\" width=\"363\" height=\"54\" /></a></p>\n<hr />\n<p>&nbsp;</p>\n<p><strong>Next week in Empower Tip #60: </strong>Deriving Channels in Empower (part 13).</p>\n<p>&nbsp;</p>\n<h3> More resources:</h3>\n<ul>\n<li>Want to learn more? Check out our <a href=\"http://www.waters.com/waters/educationList.htm?cid=513247&amp;filter=subjects|EMPW\">Empower training courses and eLearning</a></li>\n<li><a href=\"http://www.cvent.com/events/-inform-2018/event-summary-cef18d59c7b74f5dac7b16a19bf7940d.aspx\">Register Now</a> for [inform] 2018, our annual Informatics Users&#8217; Conference, May 14-17, 2018, Copenhagen, Denmark</li>\n<li>Empower is the first cloud-deployable, compliance-ready, Enterprise chromatography data software &#8211; <a href=\"http://www.waters.com/empowercloud\">Learn more about Empower Cloud</a></li>\n<li>Get the latest Empower projects, options, and more. <a href=\"https://marketplace.waters.com\">Check out the New Marketplace</a></li>\n<li>See all of our <a href=\"http://blog.waters.com/category/technologies/empower-tip-of-the-week\">tips for using Empower CDS Software</a></li>\n</ul>\n<p>&nbsp;</p>\n<p><!-- // 1 COLUMN MODULE --></p>\n<p><!-- [if (gte mso 9)|(lte ie 8)]&gt;--></p>\n<table border=\"0\" width=\"600\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\">\n<tbody>\n<tr>\n<td align=\"center\" valign=\"top\" width=\"600\">\n<table style=\"max-width: 600px; background: #eaf4f9;\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"><!--// TEXT ROW --></table>\n<p class=\" h4 no-padding\" style=\"padding-bottom: 10px; font-family: Arial, sans-serif; font-size: 16px; line-height: 21px; color: #333333; margin: 0 !important; padding: 0px !important;\">Do you want Empower Tips sent to your inbox every week?</p>\n<p><!-- // CENTER BUTTON --></p>\n<table class=\"button-container\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\">\n<tbody>\n<tr>\n<td style=\"padding-top: 20px; padding-bottom: 30px;\" align=\"center\">\n<table class=\"button\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td style=\"padding: 8px 8px;\" align=\"center\" bgcolor=\"#119988\"><a style=\"font-size: 15.5px; line-height: 20px; text-decoration: none; letter-spacing: .5px; font-family: Arial, sans-serif; padding: 0px 20px; border: 0px solid #119988; color: #ffffff !important;\" href=\"http://m.communications.waters.com/webApp/empowerTips?origin=Blog\" target=\"_blank\" rel=\"noopener noreferrer\"><span style=\"color: #ffffff;\">Subscribe Now</span></a></td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<p><!-- CENTER BUTTON // --></p>\n<p class=\"no-padding\" style=\"padding-bottom: 10px; color: #333333; font-family: Arial, sans-serif; font-size: 14px; line-height: 24px; margin: 0 !important; padding: 0px !important;\">Questions? Tips of your own? <a style=\"font-family: Arial, sans-serif; font-size: inherit; line-height: inherit; text-decoration: underline; color: #0077bb !important;\" href=\"https://waterscorp.wufoo.com/forms/wge4hnp0s4tfqn/\">Let us know!</a></p>\n<div>\n<p><!-- TEXT ROW // --></p>\n</div>\n<p><!-- [if (gte mso 9)|(lte ie 8)]&gt;--></td>\n</tr>\n</tbody>\n</table>\n<p></p>\n<!-- AddThis Advanced Settings generic via filter on the_content -->\n",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "<p>#59: We previously discussed MaxPlot for 3D PDA data in Tip 52. Today we are going to learn about MaxPlot for 3D MS data. MaxPlot is a 2D chromatogram that plots each time point at the maximum intensity across the mass range.<!-- AddThis Advanced Settings generic via filter on wp_trim_excerpt --></p>\n",
+    "protected": false
+  },
+  "author": 92,
+  "featured_media": 2465,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "sticky": false,
+  "template": "",
+  "format": "standard",
+  "meta": [],
+  "categories": [
+    545,
+    13
+  ],
+  "tags": [
+    711,
+    698,
+    629,
+    608,
+    607,
+    623,
+    125,
+    542,
+    703
+  ],
+  "_links": {
+    "self": [
+      {
+        "href": "http://blog.waters.com/wp-json/wp/v2/posts/4811"
+      }
+    ],
+    "collection": [
+      {
+        "href": "http://blog.waters.com/wp-json/wp/v2/posts"
+      }
+    ],
+    "about": [
+      {
+        "href": "http://blog.waters.com/wp-json/wp/v2/types/post"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "http://blog.waters.com/wp-json/wp/v2/users/92"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "http://blog.waters.com/wp-json/wp/v2/comments?post=4811"
+      }
+    ],
+    "version-history": [
+      {
+        "href": "http://blog.waters.com/wp-json/wp/v2/posts/4811/revisions"
+      }
+    ],
+    "wp:featuredmedia": [
+      {
+        "embeddable": true,
+        "href": "http://blog.waters.com/wp-json/wp/v2/media/2465"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "http://blog.waters.com/wp-json/wp/v2/media?parent=4811"
+      }
+    ],
+    "wp:term": [
+      {
+        "taxonomy": "category",
+        "embeddable": true,
+        "href": "http://blog.waters.com/wp-json/wp/v2/categories?post=4811"
+      },
+      {
+        "taxonomy": "post_tag",
+        "embeddable": true,
+        "href": "http://blog.waters.com/wp-json/wp/v2/tags?post=4811"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}
